@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Georgia, serif;
+    margin: 0;
+    font-size:16px;
+    overflow: auto;
+}
+
+/* Header/logo Title */
+
+.header {
+    padding: 15px;
+    text-align: center;
+    background: #F08080;
+    
+}
+
+/* Increase the font size of the heading */
+
+.header h1 {
+    position: center;
+    top: 18px;
+    left: 10px;
+    font-size: 25px;
+    color :black;
+}
+.header p {
+    position: center;
+    top: 18px;
+    left: 10px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+.header img {
+    width: 200px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    float: left;
+    padding-bottom: 10px;
+    position: center;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
+    right: 30px;
+    background-color: #F08080;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+.float .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .float .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .float:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.my-float {
+    margin-top: 25px;
+}
+.container {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 10px 10px;
+    border-color: black;
+
+    
+}
+.container i {
+    margin-left: 30px;
+    cursor: pointer;
+}
+label {
+    padding: 12px 12px 12px 12px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.col-25 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input[type=text], input[type=number],input[type=file],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 6px solid #ccc;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+input[type=submit] {
+    background-color: #DC143C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #DC143C;
+    font-weight: bold;
+}
+.icon {
+    color: black;
+    min-width: 10%;
+    text-align: center;
+    margin-top: 6px;
+    padding: 12px 5px;
+    /* margin: 8px 0; */
+  }
+
+  .input-icons i {
+    position: absolute;
+    right:10px;
+    top:3px;
+    cursor: pointer;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+    position:relative;
+}
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .main {
+        padding: 10px;
+    }
+    .row {
+            grid-template-columns: repeat(2,1fr);  
+    }
+    .col-25 {
+        float: left;
+        width: 30%;
+        margin-top: 6px;
+    }
+    
+    .col-75 {
+        float: left;
+        width: 70%;
+        margin-top: 6px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+    width: 50%;
+    height: 50%;
+
+    text-align: center;
+    font-family: calibri;
+    border: 3px solid black;
+    color: indigo;
+   
+    background-color: #FFEFD5;
+    font-weight: bold;
+    
+
+}
+.column-card {
+    float: left;
+    width: 25%;
+  
+    margin-top: 10px;
+    align-items: center;
+}
+
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding-bottom: 10px;
+    column-count: 2;
+}
+
+/* Remove extra left and right margins, due to padding */
+
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #F08080;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    bottom: -20px;
+    width: 100%;
+    overflow: hidden;
+   
+}
+.icon {
+    color: black;
+    min-width: 10%;
+    text-align: center;
+    margin-top: 6px;
+    padding: 12px 5px;
+    /* margin: 8px 0; */
+  }
+
+  .input-icons i {
+    position: absolute;
+    right:10px;
+    top:3px;
+    cursor: pointer;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+    position:relative;
+}
+    
+    
+  
+}
+
+/* Responsive layout - when the screen is more than 1000px wide */
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 90%;
+        margin: auto;
+        
+    }
+    .main {
+        padding: 100px;
+    }
+    .row {  
+        grid-template-columns: repeat(4,1fr);  
+}
+
+/* Main column */
+.main {
+    -ms-flex: 100%;
+    /* IE10 */
+    flex: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    padding: 100px;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size:cover;
+    /* position: absolute; */
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: calibri;
+    border: 3px solid black;
+    color: indigo;
+    padding-bottom: 10px;
+    background-color: #FFEFD5;
+    font-weight: bold;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.column-card {
+    float: left;
+    width: 25%;
+    
+    margin-top: 10px;
+    align-items: center;
+}
+
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding-bottom: 10px;
+    column-count: 2;
+}
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #F08080;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    bottom: -20px;
+    width: 100%;
+    overflow: hidden;
+   
+}
+
+
+}
